@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import './student.dart';
 
@@ -50,7 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
         children: students.map((st) {
           return Card(
             child: Row(
-              children: [Text(st.name)],
+              children: [
+                Container(margin: EdgeInsets.all(5), child: Text(st.name)),
+                Container(margin: EdgeInsets.all(5), child: Text(st.id)),
+                Container(
+                    margin: EdgeInsets.all(5), child: Text(st.age.toString())),
+                Container(
+                    margin: EdgeInsets.all(5), child: Text(st.date.toString())),
+              ],
             ),
           );
         }).toList(),
