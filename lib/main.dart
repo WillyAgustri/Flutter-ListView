@@ -35,7 +35,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<Student> students = [
     Student(id: "1", name: "Willy", age: 20, date: DateTime.now()),
-    Student(id: "2", name: "Bowo", age: 20, date: DateTime.now())
+    Student(id: "2", name: "Bowo", age: 20, date: DateTime.now()),
+    Student(id: "3", name: "Yola", age: 18, date: DateTime.now()),
   ];
 
   @override
